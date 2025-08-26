@@ -1,15 +1,43 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  line-height: 1.6;
+/* Variables globales */
+:root {
+  --color-primary: #2a7f62;
+  --color-secondary: #00a0a0;
+  --color-accent: #ffb400;
+  --color-dark: #333;
+  --color-light: #f5f5f5;
+  --max-width: 1200px;
 }
 
-header {
-  background: #333;
+/* Réinitialisation basique */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: var(--color-dark);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* En-tête */
+.site-header {
+  background: var(--color-primary);
   color: #fff;
-  padding: 1rem;
   display: flex;
   align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+.logo img {
+  height: 40px;
 }
 
 #burger {
@@ -17,62 +45,181 @@ header {
   border: none;
   color: #fff;
   font-size: 1.5rem;
-  margin-right: 1rem;
+  margin-left: 1rem;
   display: none;
 }
 
-nav ul {
+#site-nav {
+  flex: 1;
+  margin-left: 1rem;
+}
+
+#site-nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   gap: 1rem;
 }
 
-nav a {
+#site-nav a {
   color: #fff;
   text-decoration: none;
 }
 
-nav a.cta {
-  background: #007acc;
+.header-cta {
+  background: var(--color-accent);
+  color: #000;
   padding: 0.5rem 1rem;
   border-radius: 4px;
+  text-decoration: none;
+  margin-left: 1rem;
 }
 
+/* Boutons d'appel à l'action */
+.cta {
+  display: inline-block;
+  background: var(--color-secondary);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.cta.secondary {
+  background: var(--color-accent);
+  color: #000;
+}
+
+/* Section hero */
 .hero {
+  background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/hero.jpg') center/cover no-repeat;
+  color: #fff;
   text-align: center;
-  padding: 4rem 2rem;
-  background: #f5f5f5;
+  padding: 6rem 1rem;
 }
 
 .hero .cta {
-  display: inline-block;
-  margin: 1rem;
-  padding: 0.75rem 1.5rem;
-  background: #007acc;
-  color: #fff;
-  text-decoration: none;
+  margin: 1rem 0.5rem;
+}
+
+/* Sections génériques */
+section {
+  padding: 3rem 1rem;
+}
+
+section:nth-of-type(even) {
+  background: var(--color-light);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.cards {
+  display: grid;
+  gap: 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card h3 {
+  margin: 1rem 0 0.5rem;
+}
+
+.card p {
+  margin-bottom: 1rem;
+}
+
+.card a.cta {
+  margin-top: auto;
+}
+
+.benefits .card img {
+  margin: 0 auto 1rem;
+}
+
+.aides .card a {
+  color: var(--color-secondary);
+  text-decoration: underline;
+}
+
+.solutions .card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Processus */
+.process .steps {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  list-style: none;
+  counter-reset: step;
+}
+
+.process .steps li {
+  background: var(--color-light);
+  padding: 1rem;
   border-radius: 4px;
 }
 
+.process .steps li h3 {
+  margin: 0 0 0.5rem;
+}
+
+/* Logos partenaires */
+.partners .logos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Sections finales */
+.about-home, .final-cta {
+  text-align: center;
+}
+
+.final-cta {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+.final-cta .cta.secondary {
+  background: #fff;
+  color: var(--color-primary);
+  margin-left: 1rem;
+}
+
+/* Responsive */
 @media (max-width: 600px) {
   #burger {
     display: block;
   }
 
-  nav ul {
+  #site-nav ul {
     display: none;
     flex-direction: column;
     gap: 0;
-    background: #333;
+    background: var(--color-primary);
     position: absolute;
     top: 60px;
     left: 0;
     right: 0;
+    padding: 1rem;
   }
 
-  nav ul.open {
+  #site-nav ul.open {
     display: flex;
+  }
+
+  .header-cta {
+    display: none;
   }
 }
