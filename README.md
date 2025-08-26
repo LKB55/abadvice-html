@@ -1,1 +1,3 @@
-# abadvice-html
+# AbAdvice Static Site
+
+Initial static website resources.
