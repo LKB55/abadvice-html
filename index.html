@@ -3,21 +3,162 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AB-Advice</title>
+  <title>AB-Advice - Confort énergétique</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
+  <!-- En-tête du site avec logo, navigation dynamique et CTA principal -->
+  <header class="site-header">
+    <a href="/" class="logo"><img src="assets/img/logo.png" alt="AB-Advice"></a>
     <button id="burger" aria-label="Menu"></button>
     <nav id="site-nav" aria-label="Menu principal"></nav>
+    <a href="eligibilite/" class="cta header-cta">Tester mon éligibilité</a>
   </header>
+
   <main>
+    <!-- Section Hero d'introduction -->
     <section class="hero">
-      <h1>AB-Advice</h1>
-      <a class="cta" href="eligibilite/">Tester mon éligibilité</a>
-      <a class="cta" href="aides/">Aides du moment</a>
+      <div class="hero-content">
+        <h1>Passez au confort énergétique avec AB-Advice</h1>
+        <p>Pompes à chaleur, isolation, solaire — avec les meilleures aides 2025</p>
+        <a class="cta" href="eligibilite/">Tester mon éligibilité</a>
+        <a class="cta secondary" href="aides/">Découvrir les aides du moment</a>
+      </div>
+    </section>
+
+    <!-- Bénéfices clés -->
+    <section class="benefits">
+      <h2>Nos 3 bénéfices clés</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/img/benefit-economies.png" alt="Icône économies d'énergie">
+          <h3>Économies d’énergie</h3>
+          <p>Réduisez vos factures grâce à des solutions performantes.</p>
+        </article>
+        <article class="card">
+          <img src="assets/img/benefit-confort.png" alt="Icône confort durable">
+          <h3>Confort durable</h3>
+          <p>Profitez d’une température idéale toute l’année.</p>
+        </article>
+        <article class="card">
+          <img src="assets/img/benefit-aides.png" alt="Icône accompagnement aux aides">
+          <h3>Accompagnement aux aides</h3>
+          <p>Nous montons vos dossiers pour maximiser vos primes.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Aides du moment -->
+    <section class="aides">
+      <h2>Aides du moment</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/img/aide-coupdepouce.jpg" alt="Coup de pouce chauffage 2025">
+          <h3>Coup de pouce chauffage 2025</h3>
+          <p>Remplacez votre vieille chaudière et profitez d’un bonus exceptionnel.</p>
+          <a href="aides/coup-de-pouce-chauffage-2025.html">En savoir plus</a>
+        </article>
+        <article class="card">
+          <img src="assets/img/aide-maprimerenov.jpg" alt="MaPrimeRénov'">
+          <h3>MaPrimeRénov’</h3>
+          <p>Une aide accessible à tous les foyers pour la rénovation énergétique.</p>
+          <a href="aides/maprimerenov.html">En savoir plus</a>
+        </article>
+        <article class="card">
+          <img src="assets/img/aide-primescee.jpg" alt="Primes CEE">
+          <h3>Primes CEE</h3>
+          <p>Financez vos travaux grâce aux Certificats d’Économies d’Énergie.</p>
+          <a href="aides/">En savoir plus</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Nos solutions -->
+    <section class="solutions">
+      <h2>Nos solutions</h2>
+      <div class="cards">
+        <article class="card">
+          <img src="assets/img/ite.jpg" alt="Isolation thermique par l’extérieur">
+          <h3>Isolation par l’extérieur</h3>
+          <a class="cta" href="ite/">Découvrir</a>
+        </article>
+        <article class="card">
+          <img src="assets/img/pac-air-eau.jpg" alt="Pompe à chaleur Air-Eau">
+          <h3>PAC Air-Eau</h3>
+          <a class="cta" href="chauffage/pac-air-eau.html">Découvrir</a>
+        </article>
+        <article class="card">
+          <img src="assets/img/pac-air-air.jpg" alt="Pompe à chaleur Air-Air">
+          <h3>PAC Air-Air</h3>
+          <a class="cta" href="climatisation/pac-air-air.html">Découvrir</a>
+        </article>
+        <article class="card">
+          <img src="assets/img/eau-chaude.jpg" alt="Eau chaude">
+          <h3>Eau chaude</h3>
+          <a class="cta" href="eau-chaude/">Découvrir</a>
+        </article>
+        <article class="card">
+          <img src="assets/img/solaire.jpg" alt="Solaire photovoltaïque">
+          <h3>Solaire</h3>
+          <a class="cta" href="solaire/">Découvrir</a>
+        </article>
+        <article class="card">
+          <img src="assets/img/pro-industrie.jpg" alt="Solutions Pro et Industrie">
+          <h3>Pro / Industrie</h3>
+          <a class="cta" href="pro-industrie/">Découvrir</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- Processus en 4 étapes -->
+    <section class="process">
+      <h2>Votre projet en 4 étapes</h2>
+      <ol class="steps">
+        <li>
+          <h3>Diagnostic</h3>
+          <p>Un expert analyse votre logement et vos besoins.</p>
+        </li>
+        <li>
+          <h3>Devis</h3>
+          <p>Vous recevez une proposition détaillée et transparente.</p>
+        </li>
+        <li>
+          <h3>Installation</h3>
+          <p>Nos équipes certifiées réalisent les travaux.</p>
+        </li>
+        <li>
+          <h3>Suivi</h3>
+          <p>Nous restons à vos côtés pour optimiser vos performances.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Preuves sociales / partenaires -->
+    <section class="partners">
+      <h2>Ils nous font confiance</h2>
+      <div class="logos">
+        <img src="assets/img/samsung.png" alt="Samsung">
+        <img src="assets/img/atlantic.png" alt="Atlantic">
+        <img src="assets/img/cee.png" alt="CEE">
+        <img src="assets/img/anah.png" alt="ANAH">
+      </div>
+    </section>
+
+    <!-- À propos rapide -->
+    <section class="about-home">
+      <h2>AB-Advice en bref</h2>
+      <p>Installateur spécialiste de la rénovation énergétique, nous accompagnons particuliers et entreprises vers un confort durable.</p>
+      <a class="cta" href="a-propos/">En savoir plus</a>
+    </section>
+
+    <!-- Appel à l'action final -->
+    <section class="final-cta">
+      <h2>Prêt à passer à l'action ?</h2>
+      <a class="cta" href="contact/">Demander un devis gratuit</a>
+      <a class="cta secondary" href="contact/">Être rappelé</a>
     </section>
   </main>
+
   <script src="assets/js/main.js"></script>
 </body>
 </html>
