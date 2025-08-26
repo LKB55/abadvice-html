@@ -1,0 +1,24 @@
+[
+  {"label": "ITE", "url": "/ite/"},
+  {"label": "Chauffage", "url": "/chauffage/", "children": [
+    {"label": "PAC air-eau", "url": "/chauffage/pac-air-eau.html"}
+  ]},
+  {"label": "Climatisation", "url": "/climatisation/", "children": [
+    {"label": "PAC air-air", "url": "/climatisation/pac-air-air.html"}
+  ]},
+  {"label": "Eau chaude", "url": "/eau-chaude/", "children": [
+    {"label": "Ballon thermodynamique", "url": "/eau-chaude/ballon-thermodynamique.html"}
+  ]},
+  {"label": "Solaire", "url": "/solaire/", "children": [
+    {"label": "Photovoltaïque", "url": "/solaire/photovoltaique.html"}
+  ]},
+  {"label": "Pro / Industrie", "url": "/pro-industrie/"},
+  {"label": "Aides du moment", "url": "/aides/", "children": [
+    {"label": "Coup de pouce chauffage 2025", "url": "/aides/coup-de-pouce-chauffage-2025.html"}
+  ]},
+  {"label": "Éligibilité", "url": "/eligibilite/"},
+  {"label": "Réalisations", "url": "/realisations/"},
+  {"label": "Guides & FAQ", "url": "/guides/"},
+  {"label": "À propos", "url": "/a-propos/"},
+  {"label": "Contact / Devis", "url": "/contact/", "cta": true }
+]
