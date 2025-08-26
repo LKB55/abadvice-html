@@ -1,6 +1,9 @@
+const basePath = new URL(document.currentScript.src, window.location.href)
+  .pathname.replace(/assets\/js\/main\.js$/, '');
+
 async function buildMenu() {
   try {
-    const response = await fetch('/content/nav.json');
+    const response = await fetch(`${basePath}content/nav.json`);
     const items = await response.json();
     const nav = document.getElementById('site-nav');
     const ul = document.createElement('ul');
